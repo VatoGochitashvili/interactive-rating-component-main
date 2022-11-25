@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light_Grey: hsl(217, 12%, 63%);
+  --Dark_Blue: hsl(213, 19%, 18%);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+  --Medium_Grey: hsl(216, 12%, 54%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  min-height: 100vh;
+  background-color: var(--Very_Dark_Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(37, 45, 55, 0.6);
+  border-radius: 2.5rem;
+  display: flex;
+  padding: 3rem;
+  width: 88%;
+  max-width: 41rem;
+  font-size: 1.5rem;
+  height: 38rem;
+}
+
+.card_1,
+.card_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ----typo------ */
+h1 {
+  color: white;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  color: var(--Light_Grey);
+  line-height: 2.2rem;
+}
+
+blockquote {
+  margin-bottom: 2.6rem;
+}
+
+/* -------------- */
+
+.star {
+  width: 1.4rem;
+}
+
+.circle,
+.number {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(124, 135, 152, 0.2);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 2.6rem;
+  transition: 0.3s;
+}
+
+.number:hover {
+  background-color: var(--Orange);
+  cursor: pointer;
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  display: flex;
+  background-color: var(--Orange);
+  border: none;
+  width: 100%;
+  font-size: 1.6rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem;
+  border-radius: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+/* ----card2----- */
+.card_2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.thanks {
+  width: 14.5rem;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.card2_text {
+  margin-top: 2.6rem;
+}
+
+.selection {
+  background-color: rgba(124, 135, 152, 0.2);
+  padding: 0.8rem 1.4rem;
+  border-radius: 2rem;
+  margin-top: 2.4rem;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection p {
+  color: var(--Orange);
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: var(--Light_Grey);
+}
+
+@media screen and (min-width: 50rem) {
+  html {
+    font-size: 70%;
+  }
+}
